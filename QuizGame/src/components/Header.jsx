@@ -1,6 +1,6 @@
 import { Box, Heading, Flex } from "@chakra-ui/react";
 
-export default function Header() {
+function Header() {
   return (
     <Box bg="gray.100" py={4}>
       <Flex maxW="1200px" mx="auto" px={4} align="center">
@@ -9,3 +9,5 @@ export default function Header() {
     </Box>
   );
 }
+
+export default Header;
