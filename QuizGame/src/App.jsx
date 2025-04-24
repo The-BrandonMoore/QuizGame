@@ -9,6 +9,8 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import { AuthProvider } from "./context/AuthContext";
 
+const BYPASS_AUTH = true; // TODO: Set to false when deploying
+
 const customTheme = extendTheme({
   colors: {
     brand: {
