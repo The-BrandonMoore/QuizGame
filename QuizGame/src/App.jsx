@@ -13,6 +13,12 @@ const BYPASS_AUTH = true; // TODO: Set to false when deploying
 
 const customTheme = extendTheme({
   colors: {
+    breakpoints: {
+      sm: "320px",
+      md: "768px",
+      lg: "960px",
+      xl: "1200px",
+    },
     brand: {
       50: "#f7fafc",
       100: "#edf2f7",
@@ -29,6 +35,11 @@ const customTheme = extendTheme({
       body: {
         bg: "gray.50",
         color: "gray.900",
+      },
+      "@media screen and (min-width: 768px)": {
+        body: {
+          p: "6",
+        },
       },
     },
   },
