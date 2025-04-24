@@ -2,10 +2,12 @@
 import { Box, Flex } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
+import Header from "./Header";
 
-function Layout() {
+export default function Layout() {
   return (
     <Box minH="100vh">
+      <Header />
       <Navbar />
       <Flex as="main" p={4}>
         <Outlet />
@@ -14,7 +16,6 @@ function Layout() {
   );
 }
 
-export default Layout;
 // This component serves as a layout wrapper for the application. It includes a navigation bar and a main content area where different pages will be rendered based on the current route. The `Outlet` component from `react-router-dom` is used to render the child routes defined in the main `App` component. The `Box` and `Flex` components from Chakra UI are used for layout and styling purposes.
 // The `minH` property ensures that the layout takes up at least the full height of the viewport, and the `p` property adds padding around the main content area.
 // The `Navbar` component is imported and rendered at the top of the layout, providing a consistent navigation experience across different pages of the application. The `Flex` component is used to create a flexible layout for the main content area, allowing for easy alignment and spacing of child elements.
